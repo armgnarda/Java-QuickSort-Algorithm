@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class quickSort {
 	
 	public static void main(String[] args) {
+		// array example
 		int[] myArr = {5, 7, 2 ,9 ,6, 1, 4 ,7};
 		quickSort(myArr, 0, myArr.length - 1);
 		System.out.println("Sorted Array : " + Arrays.toString(myArr));
