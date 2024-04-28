@@ -3,7 +3,7 @@ package quickSort;
 import java.util.Arrays;
 
 public class quickSort {
-
+	
 	public static void main(String[] args) {
 		int[] myArr = {5, 7, 2 ,9 ,6, 1, 4 ,7};
 		quickSort(myArr, 0, myArr.length - 1);
@@ -18,15 +18,11 @@ public class quickSort {
 		}
 	}
 	
-	
-	
-	
-	
 	public static int partition(int[] array, int beginIndex, int endIndex) {
 		// choose the last index of the array as pivot
 		int pivot = array[endIndex];
-		
 		int i = beginIndex-1;
+		
 		// scan the array from beginning to end
 		for(int j=beginIndex; j<endIndex; j++) {
 			// If the index j is less than the pivot, increase the i index and swap with j. 
@@ -42,6 +38,5 @@ public class quickSort {
 		array[i+1] = array[endIndex];
 		array[endIndex] = temp;
 		return i+1;
-		
 	}
 }
